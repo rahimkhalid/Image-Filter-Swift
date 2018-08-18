@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FilterCollectionViewCell" customModule="RahimRepo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="92" height="91"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="92" height="91"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s1b-iC-ybh">
+                        <rect key="frame" x="0.0" y="0.0" width="92" height="91"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Andrew-Suryono" translatesAutoresizingMaskIntoConstraints="NO" id="pru-R6-6de">
+                                <rect key="frame" x="2" y="2" width="88" height="87"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pru-R6-6de" firstAttribute="top" secondItem="s1b-iC-ybh" secondAttribute="top" constant="2" id="2hU-yi-Dpq"/>
+                            <constraint firstAttribute="bottom" secondItem="pru-R6-6de" secondAttribute="bottom" constant="2" id="FaA-ix-GRM"/>
+                            <constraint firstAttribute="trailing" secondItem="pru-R6-6de" secondAttribute="trailing" constant="2" id="fPC-xZ-ZgU"/>
+                            <constraint firstItem="pru-R6-6de" firstAttribute="leading" secondItem="s1b-iC-ybh" secondAttribute="leading" constant="2" id="yFz-Kw-Mck"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="s1b-iC-ybh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="DfW-hH-WAQ"/>
+                <constraint firstAttribute="trailing" secondItem="s1b-iC-ybh" secondAttribute="trailing" id="KMb-TZ-tkE"/>
+                <constraint firstAttribute="bottom" secondItem="s1b-iC-ybh" secondAttribute="bottom" id="jH4-NG-yWR"/>
+                <constraint firstItem="s1b-iC-ybh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="uic-2n-p4d"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="92" height="91"/>
+            <connections>
+                <outlet property="cellParentView" destination="s1b-iC-ybh" id="xgh-gk-SZM"/>
+                <outlet property="filterPreviewImage" destination="pru-R6-6de" id="NXp-Sv-aI8"/>
+            </connections>
+            <point key="canvasLocation" x="55" y="103.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Andrew-Suryono" width="450" height="297"/>
+    </resources>
+</document>
